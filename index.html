@@ -74,6 +74,85 @@
           </button>
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
+              <form action="" class="form-windows">
+                <div class="div-container">
+                  <p class="form-text">
+                    Leave your contacts and we will call you back
+                  </p>
+                  <ul>
+                    <li class="li-forms">
+                      <label class="form-label" for="user-name">Name</label>
+                      <div class="input-icons">
+                        <input
+                          class="form-input"
+                          id="user-name"
+                          type="text"
+                          name="user-name"
+                          autofocus
+                          required
+                        />
+                        <svg class="svg-input">
+                          <use href="./images/icons.svg#icon-humans"></use>
+                        </svg>
+                      </div>
+                    </li>
+                    <li class="li-forms">
+                      <label class="form-label" for="phone">Phone</label>
+
+                      <div class="input-icons">
+                        <input
+                          class="form-input"
+                          id="phone"
+                          type="tel"
+                          name="Phone"
+                          required
+                        />
+                        <svg class="svg-input-tel">
+                          <use href="./images/icons.svg#icon-phone"></use>
+                        </svg>
+                      </div>
+                    </li>
+                    <li class="li-forms">
+                      <label class="form-label" for="user-email">Email</label>
+                      <div class="input-icons">
+                        <input
+                          class="form-input"
+                          type="email"
+                          name="email"
+                          id="user-email"
+                          required
+                        />
+                        <svg class="svg-input-mail">
+                          <use href="./images/icons.svg#icon-email"></use>
+                        </svg>
+                      </div>
+                    </li>
+                    <li class="form-comments">
+                      <label class="form-label" for="comments"> Comment</label>
+                      <textarea
+                        class="form-textarea text-placeholder"
+                        name="Comment"
+                        id="comments"
+                        placeholder="Text-input"
+                      ></textarea>
+                    </li>
+                  </ul>
+                  <div class="form-police">
+                    <input
+                      class="checkbox-foorm"
+                      type="checkbox"
+                      name="Privacy Policy"
+                      id="Privacy Policy"
+                    />
+                    <span class="checkbox-icon"> </span>
+                    <label class="checkbox-label" for="Privacy Policy">
+                      I accept the terms and conditions of the
+                    </label>
+                    <a class="styles-link" href=""> Privacy Policy</a>
+                  </div>
+                  <button class="button-send" type="submit">Send</button>
+                </div>
+              </form>
               <button class="close" type="button" data-modal-close>
                 <svg class="vector">
                   <use href="./images/icons.svg#icon-Vector"></use>
@@ -393,47 +472,73 @@
     <footer class="backround-footer">
       <div class="container footer-cointainer">
         <div class="foterlogo-text">
-          <a class="logotyp-footer" href="./index.html"
-            ><span class="weblogo">WEB</span>STUDIO</a
-          >
-          <p class="text-footer">
-            Increase the flow of customers and sales for your business with
-            digital marketing & growth solutions.
-          </p>
+          <div class="footer-one-block">
+            <a class="logotyp-footer" href="./index.html"
+              ><span class="weblogo">WEB</span>STUDIO</a
+            >
+            <p class="text-footer">
+              Increase the flow of customers and sales for your business with
+              digital marketing & growth solutions.
+            </p>
+          </div>
+
+          <div class="footer-social">
+            <h3 class="foter-heading">Social media</h3>
+            <ul class="icons-footer">
+              <li class="itetems-footer">
+                <a class="icons-link" href="">
+                  <svg class="svg-footer">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="itetems-footer">
+                <a class="icons-link" href="">
+                  <svg class="svg-footer">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="itetems-footer">
+                <a class="icons-link" href="">
+                  <svg class="svg-footer">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="itetems-footer">
+                <a class="icons-link" href="">
+                  <svg class="svg-footer">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="footer-social">
-          <h3 class="foter-heading">Social media</h3>
-          <ul class="icons-footer">
-            <li class="itetems-footer">
-              <a class="icons-link" href="">
-                <svg class="svg-footer">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="itetems-footer">
-              <a class="icons-link" href="">
-                <svg class="svg-footer">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="itetems-footer">
-              <a class="icons-link" href="">
-                <svg class="svg-footer">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="itetems-footer">
-              <a class="icons-link" href="">
-                <svg class="svg-footer">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+
+        <form class="form-footer" name=" ">
+          <p class="foter-heading">Subscribert</p>
+          <div class="footer-div">
+            <label class="label-footer" for="user_email">
+              <span class="footer-position">Email </span>
+            </label>
+            <input
+              class="input-footer"
+              type="email"
+              name="email"
+              id="user_email"
+              placeholder="E-mail"
+              required
+            />
+            <button class="button-footer" type="submit">
+              Subscribert
+              <svg class="btn-icons">
+                <use href="./images/icons.svg#icon-button-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
